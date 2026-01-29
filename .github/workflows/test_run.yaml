@@ -3,6 +3,7 @@ on: push
 
 jobs:
   call-workflow:
+    runs-on: self-hosted
     uses: n00bminion/GithubActionsUtils/.github/workflows/setup_python_and_venv.yaml@main
     with:
       message: "Hello from the caller workflow!"
