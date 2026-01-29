@@ -1,0 +1,6 @@
+name: Call a reusable workflow
+on: push
+
+jobs:
+  call-workflow:
+    uses: n00bminion/GithubActionsUtils/.github/workflows/setup_python_and_venv.yml@v1
