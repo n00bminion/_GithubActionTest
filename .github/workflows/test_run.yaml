@@ -3,6 +3,7 @@ on: push
 
 jobs:
   test:
+    runs-on: self-hosted
     steps:
       - name: Get working directory
         shell: powershell
