@@ -2,14 +2,14 @@ name: Call a reusable workflow
 on: push
 
 jobs:
+  call-workflow:
+    uses: n00bminion/GithubActionsUtils/.github/workflows/setup_python_and_venv.yaml@main
+    with:
+      message: "Hello from the caller workflow!"
+
   test:
     runs-on: self-hosted
     steps:
       - name: Get working directory
         shell: powershell
         run: Write-host (Get-Item .).FullName 
-
-  # call-workflow:
-  #   uses: n00bminion/GithubActionsUtils/.github/workflows/setup_python_and_venv.yaml@main
-  #   with:
-  #     message: "Hello from the caller workflow!"
