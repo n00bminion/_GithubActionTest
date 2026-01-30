@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Get working directory
         shell: powershell
-        run: Write-host (Get-Item .).FullName
+        run: Write-host (Get-Item .).FullName 
 
   call-workflow:
     uses: n00bminion/GithubActionsUtils/.github/workflows/setup_python_and_venv.yaml@main
