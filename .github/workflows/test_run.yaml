@@ -9,7 +9,7 @@ jobs:
         shell: powershell
         run: Write-host (Get-Item .).FullName 
 
-  call-workflow:
-    uses: n00bminion/GithubActionsUtils/.github/workflows/setup_python_and_venv.yaml@main
-    with:
-      message: "Hello from the caller workflow!"
+  # call-workflow:
+  #   uses: n00bminion/GithubActionsUtils/.github/workflows/setup_python_and_venv.yaml@main
+  #   with:
+  #     message: "Hello from the caller workflow!"
